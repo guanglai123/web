@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>獨特的HTML</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            transition: background-color 0.5s;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            transition: transform 0.5s;
+        }
+
+        @keyframes changeColor {
+            0% { background-color: #3498db; }
+            50% { background-color: #e74c3c; }
+            100% { background-color: #3498db; }
+        }
+
+        @keyframes rotateText {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        body:hover {
+            animation: changeColor 5s infinite;
+        }
+
+        h1:hover {
+            animation: rotateText 5s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>獨特的HTML體驗</h1>
+
+</body>
+</html>

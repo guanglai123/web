@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不一樣的HTML</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #ff00cc, #3333cc);
+            color: white;
+            overflow: hidden;
+            animation: changeBackground 5s infinite alternate;
+        }
+
+        #bouncing-element {
+            font-size: 2em;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes changeBackground {
+            from {
+                background: linear-gradient(45deg, #ff00cc, #3333cc);
+            }
+            to {
+                background: linear-gradient(45deg, #3333cc, #ff00cc);
+            }
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bouncing-element">不一樣的HTML效果</div>
+
+</body>
+</html>
